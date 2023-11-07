@@ -22,6 +22,8 @@ public class FrameMenu extends javax.swing.JFrame {
      * Creates new form FrameMenu
      */
     int renglon;
+    
+    InternalTable tablasa;
     public FrameMenu() {
         initComponents();
     }
@@ -122,9 +124,12 @@ public class FrameMenu extends javax.swing.JFrame {
 
         jDesktopPane1.revalidate();
         jDesktopPane1.repaint();
-*/  
-        tablas tablasa = new tablas();
-        jDesktopPane1.add(tablasa);
+*/      
+        if(tablasa==null){
+            tablasa = new InternalTable();
+            jDesktopPane1.add(tablasa);
+        }
+        
         tablasa.setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 

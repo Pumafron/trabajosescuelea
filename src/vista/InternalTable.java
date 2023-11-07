@@ -10,12 +10,12 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author pumaf
  */
-public class tablas extends javax.swing.JInternalFrame {
+public class InternalTable extends javax.swing.JInternalFrame {
     int renglon;
     /**
      * Creates new form tablas
      */
-    public tablas() {
+    public InternalTable() {
         initComponents();
     }
 
@@ -40,6 +40,8 @@ public class tablas extends javax.swing.JInternalFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
+
+        setClosable(true);
 
         jButton2.setText("Limpiar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
